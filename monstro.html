@@ -1,0 +1,45 @@
+<hmtl>
+  <head>
+    <title>Alimentador INSANO de MONSTROS VERDES</title>
+    <meta charset="utf8" ></meta>
+    <link rel="stylesheet" href="monstro.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <h1 class="text-center">Alimente seu monstro!</h1>
+    <form action="http://terrivel.herokuapp.com/monster/" method="GET">
+      <label>Numero de pedras:  <input class="numero" type="number" name="num_pedras"></label><br>
+      <label>Tamanho pedras:    <input class="numero" type="number" name="tam_pedras" step="0.5" min="1" max="7" value="3"><br></label><br>
+      <label>Nome:           <br><input type="text" name="nome" pattern="[A-Za-z]{0,20}"> </label><br>
+      <label>Cor do ceu:     <br><input type="text" name="corCeu1" > </label><br>
+      <label>Cor do ceu 2:   <br><input type="text" name="corCeu2" > </label><br>
+
+      <label for="tipo_pedras" >Sabor das pedras: <br>
+        <select name="tipo_pedras">
+          <option value="marroada">Marroada</option>
+          <option value="topazio">Topazio</option>
+          <option value="espinela">Espinela</option>
+          <option value="ametista" selected>Ametista</option>
+        </select>
+      </label>
+      <label for="tipo_pedras_sortidas" >Sortidas: <br>
+        <select name="tipo_pedras_sortidas">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Nao</option>
+        </select>
+      </label>
+
+
+      <button class="btn btn-primary btn-color btn-bg-color" >Enviar</button>
+    </form>
+
+    <script src='monstro.js'></script>
+  </body>
+
+</hmtl>

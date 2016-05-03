@@ -1,0 +1,28 @@
+body {
+  background: salmon !important;
+}
+
+form {
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px black;
+  margin: 20px auto;
+  padding: 10px 0px;
+  width: 260px;
+  background-color: lightblue;
+
+}
+
+.numero {
+  width: 40px;
+  margin-right: 50px;
+  float: right;
+}
+
+label {
+  width: 100%;
+  padding: 10px 0px 0px 30px;
+}
+
+button {
+    margin: 20px 0px 10px 30px !important;
+}
