@@ -14,25 +14,28 @@
 
     <h1 class="text-center">Alimente seu monstro!</h1>
     <form action="http://terrivel.herokuapp.com/monster/" method="GET">
-      <label>Numero de pedras:  <input class="numero" type="number" name="num_pedras"></label><br>
+      <label>Numero de pedras:  <input class="numero" type="number" name="num_pedras" placeholder="nr" min="0"></label><br>
       <label>Tamanho pedras:    <input class="numero" type="number" name="tam_pedras" step="0.5" min="1" max="7" value="3"><br></label><br>
-      <label>Nome:           <br><input type="text" name="nome" pattern="[A-Za-z]{0,20}"> </label><br>
-      <label>Cor do ceu:     <br><input type="text" name="corCeu1" > </label><br>
-      <label>Cor do ceu 2:   <br><input type="text" name="corCeu2" > </label><br>
+      <label>Nome:           <br><input type="text" name="nome" pattern="[A-Za-z]{0,20}" placeholder="NoMeMaLuCoPorFaVOr"> </label><br>
+      <label>Cor do ceu:     <br><input type="text" name="corCeu1" placeholder="Corzinha maneira pf"> </label><br>
+      <label>Cor do ceu 2:   <br><input type="text" name="corCeu2" placeholder="Corzinha maneira tbm pf"> </label><br>
 
       <label for="tipo_pedras" >Sabor das pedras: <br>
-        <select name="tipo_pedras">
+        <select name="tipo_pedras" class="form-control">
           <option value="marroada">Marroada</option>
           <option value="topazio">Topazio</option>
           <option value="espinela">Espinela</option>
           <option value="ametista" selected>Ametista</option>
         </select>
       </label>
-      <label for="tipo_pedras_sortidas" >Sortidas: <br>
-        <select name="tipo_pedras_sortidas">
-          <option value="sim">Sim</option>
-          <option value="nao" selected>Nao</option>
-        </select>
+
+      <br><br>
+      <label>Sortidas?</label>
+      <label class="selecao">
+        <input name="tipo_pedras_sortidas" type="radio" value="sim">Sim
+      </label>
+      <label class="selecao">
+        <input name="tipo_pedras_sortidas" type="radio" value="nao">Naum
       </label>
 
 

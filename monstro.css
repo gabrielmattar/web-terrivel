@@ -7,22 +7,41 @@ form {
   box-shadow: 1px 1px 5px black;
   margin: 20px auto;
   padding: 10px 0px;
-  width: 260px;
+  width: 300px;
   background-color: lightblue;
 
 }
 
 .numero {
-  width: 40px;
-  margin-right: 50px;
-  float: right;
+  width: 50px;
 }
 
+input[type="text"], input[type="number"] {
+  float: right;
+  margin-right: 20px !important;
+}
+select {
+  float: right;
+  margin-right: 20px !important;
+  width: 80% !important;
+}
+
+.selecao {
+  width: 40%;
+}
+
+input[name="tipo_pedras_sortidas"]{
+  float:none;
+  width: 20px;
+}
 label {
+  font-size: 17px;
   width: 100%;
   padding: 10px 0px 0px 30px;
 }
 
 button {
-    margin: 20px 0px 10px 30px !important;
+  font-size: 20px !important;
+  width: 80%;
+  margin: 30px 0px 10px 30px !important;
 }
